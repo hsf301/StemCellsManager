@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="90dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl_container"
+        android:background="@drawable/bg_white_top_round"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_cancle"
+                style="@style/TextBlack12Sp"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="@string/btn_cancle" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@+id/btn_delete"
+                android:layout_toRightOf="@+id/btn_cancle"
+                android:gravity="center"
+                android:text="@string/title_dynamic_detail"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="@style/TextWhite12Sp"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_red"
+                android:text="@string/btn_delete" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_weixin"
+                android:layout_width="@dimen/width_dynamic_menu"
+                android:layout_height="@dimen/height_dynamic_menu"
+                android:padding="3dp"
+                android:src="@mipmap/icon_share_1" />
+
+            <ImageView
+                android:id="@+id/iv_pengyouquan"
+                android:layout_width="@dimen/width_dynamic_menu"
+                android:layout_height="@dimen/height_dynamic_menu"
+                android:padding="3dp"
+                android:src="@mipmap/icon_share_2" />
+
+
+            <ImageView
+                android:id="@+id/iv_qq"
+                android:layout_width="@dimen/width_dynamic_menu"
+                android:layout_height="@dimen/height_dynamic_menu"
+                android:padding="3dp"
+                android:src="@mipmap/icon_share_3" />
+
+            <ImageView
+                android:id="@+id/iv_qqzone"
+                android:layout_width="@dimen/width_dynamic_menu"
+                android:layout_height="@dimen/height_dynamic_menu"
+                android:padding="3dp"
+                android:src="@mipmap/icon_share_5" />
+
+            <ImageView
+                android:id="@+id/iv_weibo"
+                android:layout_width="@dimen/width_dynamic_menu"
+                android:layout_height="@dimen/height_dynamic_menu"
+                android:padding="3dp"
+                android:src="@mipmap/icon_share_4" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

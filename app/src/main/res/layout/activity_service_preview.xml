@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgContainer">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                android:scrollingCache="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </android.support.v4.view.ViewPager>
+
+                        <LinearLayout
+                            android:id="@+id/ll_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="35dp"
+                            android:orientation="horizontal"></LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginTop="-20dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp_10">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_10">
+
+                            <TextView
+                                android:id="@+id/tv_title"
+                                style="@style/TextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="关节炎的救星—干细胞疗法"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_content"
+                                style="@style/TextBlack12Sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:lineSpacingMultiplier="1.1"
+                                android:text="关节炎泛指发生在人体关节及周围组织，由炎症，感 染，退化，创伤或其他因素引起的炎性疾病，可分为十种 我国关节炎患者有一亿以上，且人数在不断增加。临床表 现为关节红肿，热，痛，功能障碍及关节畸形重者导致关 节残疾。  间充质干细胞是一类早期未分化细胞，具有自我复制 无限增殖，多向分化潜能以及修复再生等特点，可通过分 泌细胞因子，减少验证，减少组织细胞凋亡，促进内源性 组织器官的干细胞增殖及免疫调节，从而作为种子细胞达 到修复组织器官的效果。连续传代培养和冷冻保存后仍具 有多向分化潜能，医学称之为“万用细胞”。" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_flag"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_10" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_discount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                </android.support.v7.widget.RecyclerView>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:layout_marginTop="@dimen/dp_10">
+
+                                <TextView
+                                    android:id="@+id/tmp"
+                                    style="@style/TextWhite10Sp"
+                                    android:layout_width="55dp"
+                                    android:layout_height="25dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:background="@drawable/btn_flag_blue"
+                                    android:gravity="center"
+                                    android:text="产品优惠" />
+
+                                <TextView
+                                    android:id="@+id/tv_discount"
+                                    style="@style/TextBlack12Sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_toRightOf="@+id/tmp"
+                                    android:lineSpacingMultiplier="1.1"
+                                    android:text="线上预订，即送3988元优惠券，下单后赠送戴森按摩仪 和精美纪念品一份" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/bg_white"
+                            android:padding="@dimen/dp_10"
+                            android:visibility="gone">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_qa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_10">
+
+                            <TextView
+                                style="@style/TextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="服务摘要"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_summary_part_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_10" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_summary_part_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/dp_10" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_10">
+
+                            <TextView
+                                style="@style/TextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="服务流程"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/TextGray12Sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="以下流程时间以用户签约并确认履约时起" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:layout_marginTop="@dimen/dp_10">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_process"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_10"
+                                android:text="产品特色"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_details"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        android:background="@drawable/bg_title">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/height_title"
+            android:layout_height="@dimen/height_title"
+            android:padding="@dimen/padding_all_back"
+            app:srcCompat="@mipmap/icon_arrow_left_white" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_service_detail" />
+
+    </RelativeLayout>
+</RelativeLayout>

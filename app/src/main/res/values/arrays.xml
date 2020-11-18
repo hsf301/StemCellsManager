@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interaction_type">
+        <item>服务咨询</item>
+        <item>服务问答</item>
+        <!--<item>商品咨询</item>-->
+        <item>动态评论</item>
+        <item>活动报名</item>
+        <!--<item>活动咨询</item>-->
+    </string-array>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgContainer">
+
+    <com.amap.api.maps.MapView
+
+        android:id="@+id/map"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tmp"
+        android:layout_below="@+id/top"
+        android:layout_marginBottom="-20dp"
+        android:minHeight="300dp" />
+
+    <LinearLayout
+        android:id="@id/tmp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_white_top_round"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tmp"
+            android:layout_below="@+id/top"
+            android:layout_margin="@dimen/dp_10">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <include
+                layout="@layout/include_empty_page"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/height_title"
+                android:layout_height="@dimen/height_title"
+                android:padding="@dimen/padding_all_back"
+                app:srcCompat="@mipmap/icon_arrow_left_white" />
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/title_activity_select_address" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                style="@style/TextWhite12Sp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/btn_ok" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/bg_white"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/tmp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/ssdk_country_search_icon" />
+
+            <EditText
+                android:id="@+id/et_key"
+                style="@style/EditText13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@+id/iv_delete"
+                android:layout_toRightOf="@+id/tmp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入小区/写字楼等"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/icon_delete_key" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

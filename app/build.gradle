@@ -1,0 +1,219 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+android {
+
+    signingConfigs {
+        release {
+            keyAlias '机械租赁'
+            keyPassword 'qwea231'
+            storeFile file('F:/keystore/nvlbs.keystore')
+            storePassword 'qwea231'
+        }
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('E:/孙广智/.android/debug.keystore')
+            storePassword 'android'
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+        }
+    }
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.huashengfu.StemCellsManager"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionName rootProject.ext.versionName
+        versionCode rootProject.ext.versionCode
+        signingConfig signingConfigs.release
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'armeabi-v7a', 'arm64-v8a' //,'x86', 'x86_64'//, 'armeabi-v7a', 'arm64-v8a'
+        }
+
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME : applicationId,
+//                JPUSH_APPKEY : "53b071e4e4cf33e4a35d59de", //JPush 上注册的包名对应的 Appkey.
+//                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+//        ]
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile 'F:/AndroidStudioProjects-ysq/StemCellsManager/app/proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "ifShowLog", "false"
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "ifShowLog", "true"
+        }
+    }
+
+    productFlavors {
+        product_StemCellsManager {
+            buildConfigField "String", "baseUrl", "\"http://test.huashengfu.cn:7777\""
+            buildConfigField "boolean", "test", "false"
+            buildConfigField "String", "phone", "\"\""
+            buildConfigField "String", "password", "\"\""
+        }
+
+        product_StemCellsManager_4_test {
+            buildConfigField "String", "baseUrl", "\"http://test.huashengfu.cn:7777\""
+            buildConfigField "boolean", "test", "true"
+            buildConfigField "String", "phone", "\"13120093330\""
+            buildConfigField "String", "password", "\"123456\""
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 根据所支持的机型分别打包，splits与ndk的设置为互斥，两个设置只能选择一种
+//    splits {
+//        abi {
+//            reset()
+//            enable true
+//            universalApk false //generate an additional APK that contains all the ABIs
+//            include 'armeabi', 'armeabi-v7a', 'arm64-v8a' //'x86', 'x86_64',  //select ABIs to build APKs for
+//        }
+//    }
+//    project.ext.versionCodes = ['armeabi': 1, 'armeabi-v7a': 2, 'arm64-v8a': 3] //, 'mips': 5, 'mips64': 6, 'x86': 8, 'x86_64': 9
+
+    //release版本输出包名自动追加版本号和版本名称
+    applicationVariants.all {
+        variant ->
+
+            variant.outputs.all {
+                //只处理生产版本
+                if (buildType.name == 'release') {
+                    def createTime = new Date().format("YYYY-MM-dd", TimeZone.getTimeZone("GMT+08:00"))
+                    // app包名称
+                    outputFileName = "app_" + productFlavors[0].name + "_v" + defaultConfig.versionName + "_" + createTime + "_" + buildType.name + ".apk"
+                }
+            }
+
+//            variant.outputs.each {
+//                output -> output.versionCodeOverride = project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0) * 1000000 + android.defaultConfig.versionCode
+//            }
+
+            // 根据所支持的机型分别打包
+//            variant.outputs.all {
+//                output ->
+//                    def createTime = new Date().format("YYYY-MM-dd", TimeZone.getTimeZone("GMT+08:00"))
+//                    def abiName = output.getFilter(com.android.build.OutputFile.ABI)
+//                    outputFileName = "${variant.name}-${abiName}-${defaultConfig.versionName}-${createTime}.apk"
+//            }
+    }
+}
+
+MobSDK {
+//    shareSDK 的appKey appSecret
+//    fp true //严格模式
+    appKey "314815970b437"
+    appSecret "cd03bf812c51b69ff402c1c4492984ff"
+    ShareSDK {
+        loopShare false
+        devInfo {
+            Wechat {
+                id 1
+                sort 1
+                appId "wxf9f14d5034ac47d0"
+                appSecret "4b6787dee926e2e11e031a708302c5a8"
+//                要分享微信小应用程序时用userName,path
+//                userName "gh_afb25ac019c9"
+//                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+            }
+            WechatMoments {
+                id 2
+                sort 2
+                appId "wxf9f14d5034ac47d0"
+                appSecret "4b6787dee926e2e11e031a708302c5a8"
+            }
+            SinaWeibo {
+                id 3
+                sortId 3
+                appKey "2347158024"
+                appSecret "bad220a66e2f460c5de92149fc87816a"
+//                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient true
+                enable true
+            }
+            QQ {
+                id 4
+                sortId 4
+                appKey "101911699"
+                appSecret "5544b12d5be2d5c27ddfac719e44aaa8"
+                bypassApproval false
+                shareByAppClient true
+                enable true
+            }
+            QZone {
+                id 5
+                sortId 5
+                appKey "101911699"
+                appSecret "5544b12d5be2d5c27ddfac719e44aaa8"
+                bypassApproval false
+                shareByAppClient true
+                enable true
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "com.android.support:support-v4:$supportVersion"
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:cardview-v7:$supportVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    // 视频剪辑
+//    implementation 'com.github.kui92:FFmpegLibrary:3.2'
+    implementation(name: 'FFmpegLibrary-3.2', ext: 'aar')
+
+    // 腾讯视频播放器
+    implementation(name: 'LiteAVSDK_Player_7.8.9518', ext: 'aar')
+    //json
+    implementation 'com.google.code.gson:gson:2.4'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    //网络请求
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation "com.android.support:recyclerview-v7:$supportVersion"
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    implementation 'com.blankj:utilcode:1.20.4'
+    implementation 'com.github.bumptech.glide:glide:3.5.2'
+    implementation 'com.android.support:multidex:1.0.3'
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.5'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    // EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation files('libs/AMap3DMap_7.6.0_AMapSearch_7.6.0_AMapLocation_5.2.0_20200915.jar')
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.zxing:android-core:3.3.0'
+    // JPush
+    //    implementation 'cn.jiguang.sdk:jpush:3.2.0'
+    //    implementation 'cn.jiguang.sdk:jcore:2.0.1'
+    implementation project(':superplayerkit')
+
+}

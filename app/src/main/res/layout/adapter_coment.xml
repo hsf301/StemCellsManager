@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/width_user_header_image"
+            android:layout_height="@dimen/height_user_header_image"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/image_header" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/iv_select"
+            android:layout_toRightOf="@+id/iv_header"
+            android:text="TextView"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="@dimen/width_comment_check"
+            android:layout_height="@dimen/height_comment_check"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/icon_check_comment" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:lineSpacingMultiplier="1.1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/TextGray12Sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="right"
+        android:text="TextView" />
+
+</LinearLayout>

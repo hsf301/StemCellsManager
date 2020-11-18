@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgContainer">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title"
+            android:background="@drawable/bg_title">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/height_title"
+                android:layout_height="@dimen/height_title"
+                android:padding="@dimen/padding_all_back"
+                app:srcCompat="@mipmap/icon_arrow_left_white" />
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/title_customer_service_settings" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignLeft="@+id/ll_goods"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ll_goods"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/bg_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/TextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_customer_service_settings_menu_1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignLeft="@+id/ll_service"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ll_service"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/bg_line"
+                    android:visibility="gone" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@id/tv_name"
+                        style="@style/TextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_customer_service_settings_menu_2" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_activity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignLeft="@+id/ll_activity"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ll_activity"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/bg_line"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@id/tv_name"
+                        style="@style/TextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_customer_service_settings_menu_3" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" />
+
+</RelativeLayout>

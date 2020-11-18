@@ -1,0 +1,689 @@
+<resources>
+    <string name="app_name">大健康商户端</string>
+
+    <string name="rationale_ask_again">如果没有请求的权限，这个应用程序可能无法正常工作。打开应用程序设置界面修改应用程序权限。</string>
+    <string name="rationale_cancle">申请权限被拒绝。</string>
+
+    <string name="dialog_title_discount">选择商品优惠</string>
+    <string name="dialog_title_customer_telephone">修改手机号码</string>
+    <string name="dialog_message_wait">请求中，请稍后...</string>
+    <string name="dialog_message_delete_service_flag">是否删除所选标签？</string>
+    <string name="dialog_message_offline_service">是否下架此服务？</string>
+    <string name="dialog_message_online_service">是否上架此服务？</string>
+    <string name="dialog_message_delete_photo">是否删除所选照片？</string>
+    <string name="dialog_message_delete_schedule">是否删除所选日程？</string>
+    <string name="dialog_message_delete_step">是否删除所选步骤？</string>
+    <string name="dialog_message_delete_introduction">是否删除所选服务介绍？</string>
+    <string name="dialog_message_delete_ad">是否删除所选图片？</string>
+    <string name="dialog_message_delete_goods">是否删除所选商品介绍？</string>
+    <string name="dialog_message_stop_activity">是否停止此活动？</string>
+    <string name="dialog_message_start_activity">是否开始此活动？</string>
+    <string name="dialog_message_offline_goods">是否下架此商品？</string>
+    <string name="dialog_message_online_goods">是否上架此商品？</string>
+    <string name="dialog_message_delete_activity_detail">是否删除所选活动介绍？</string>
+    <string name="dialog_message_delete_dynamic_detail">是否删除所选动态？</string>
+    <string name="dialog_message_delete_video">是否删除所选视频？</string>
+    <string name="dialog_message_delete_comment">确认删除这%1$d条评论？</string>
+    <string name="dialog_message_delete_branch">是否删除此分支机构？</string>
+    <string name="dialog_message_nosave_branch">未填写完整的信息将不会被保留是否退出？</string>
+    <string name="dialog_message_refund">总退款金额：￥%1$s是否%2$s？</string>
+    <string name="dialog_message_improve_information_reject">您的企业信息审核未通过。是否完善信息？</string>
+    <string name="dialog_message_logout">是否退出登录？</string>
+
+    <string name="dialog_message_nosave_goods_parameters">尚未填写完成的信息退出将不会保存，是否继续？</string>
+    <string name="dialog_message_improve_information">完善信息可使用更多功能，是否完善？</string>
+
+    <string name="dialog_message_delete_commodity_specifications">是否删除此商品规格？</string>
+    <string name="dialog_message_nosave_commodity_specifications">您有尚未保存的信息是否继续？</string>
+
+    <string name="dialog_message_publish_service_unfinished">您有未完成的服务信息，是否继续编辑？</string>
+
+    <string name="dialog_message_no_save">您编辑的内容尚未保存是否保存？</string>
+
+    <string name="tips_user_info_checking">您的企业信息正在审核中，请耐心等候。</string>
+
+
+    <string name="btn_continue_edit">继续填写</string>
+    <string name="btn_quit">退出</string>
+
+
+    <string name="btn_login">登录</string>
+    <string name="btn_commit">保存并提交</string>
+    <string name="btn_upload">上传并保存</string>
+    <string name="btn_add_flag">添加</string>
+    <string name="btn_create_service">+　创建新服务</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_service_offline">已下架服务</string>
+    <string name="btn_service_online">已上架服务</string>
+    <string name="btn_offline_service">下架此服务</string>
+    <string name="btn_online_service">上架此服务</string>
+    <string name="btn_offline_goods">下架此商品</string>
+    <string name="btn_online_goods">上架此商品</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancle">取消</string>
+    <string name="btn_camera">拍照</string>
+    <string name="btn_album">从相册选择</string>
+    <string name="btn_add_step">添加步骤</string>
+    <string name="btn_add_schedule">添加日程</string>
+    <string name="btn_add_photo">添加图片</string>
+    <string name="btn_add_text">添加文案</string>
+    <string name="btn_modify_text">修改内容</string>
+
+    <string name="btn_continue_editing">继续编辑</string>
+    <string name="btn_discard_editing">放弃编辑</string>
+    <string name="btn_save_quit">保存并退出</string>
+
+    <string name="btn_activity_stoped">未开始活动</string>
+    <string name="btn_activity_start">已开始活动</string>
+    <string name="btn_activity_stop">停止此活动</string>
+    <string name="btn_activity_starting">开始此活动</string>
+
+    <string name="btn_goods_offline">已下架商品</string>
+    <string name="btn_goods_online">已上架商品</string>
+
+    <string name="btn_create_activity">+　创建新活动</string>
+    <string name="btn_create_dynamic">+　创建新动态</string>
+    <string name="btn_create_goods">+　发布新商品</string>
+
+    <string name="btn_up">上移</string>
+    <string name="btn_down">下移</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_view_review">查看全部评论>></string>
+    <string name="btn_view_qa">查看全部提问>></string>
+    <string name="btn_view_consultation">查看全部咨询>></string>
+    <string name="btn_view_registration">查看全部报名>></string>
+    <string name="btn_view_service_consultation">查看全部人员>></string>
+    <string name="btn_call_phone">拨打电话</string>
+    <string name="btn_answer">回复</string>
+    <string name="btn_send">发送</string>
+
+    <string name="btn_all">全选</string>
+    <string name="btn_cancle_all">取消全选</string>
+    <string name="btn_manager">管理</string>
+
+    <string name="btn_add_video">添加视频</string>
+
+    <string name="btn_publish">确认发布</string>
+
+    <string name="btn_activity_closed">已结束活动</string>
+    <string name="btn_activity_Ongoing">进行中活动</string>
+
+    <string name="btn_service_closed">已下架服务</string>
+    <string name="btn_service_showing">展示中服务</string>
+
+
+    <string name="btn_next">下一步</string>
+    <string name="btn_deliver">发货</string>
+    <string name="btn_immediate_delivery">立即发货</string>
+    <string name="btn_agree_to_return">同意退货</string>
+    <string name="btn_immediate_refund">立即退款</string>
+
+    <string name="btn_batch_management">批量管理</string>
+    <string name="btn_create_specifications">添加商品规格</string>
+    <string name="btn_saved">已保存</string>
+    <string name="btn_register_now">立即注册</string>
+    <string name="btn_findpwd">找回密码</string>
+    <string name="btn_send_code">获取验证码</string>
+    <string name="btn_login_now">立即登录</string>
+    <string name="btn_resend_code">重新发送</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_confirm_modify">确认修改</string>
+    <string name="btn_complete_login">完成并登录</string>
+    <string name="btn_detail">查看详情</string>
+
+    <string name="btn_not_yet">暂不完善</string>
+    <string name="btn_immediate">立即完善</string>
+
+    <string name="btn_branch_add">添加机构</string>
+    <string name="btn_branch_delete">删除机构</string>
+
+    <string name="str_sned_time">%1$d s后重发</string>
+    <string name="str_answer">已回复</string>
+
+
+    <string name="text_empty">暂无内容</string>
+    <string name="text_empty_service">暂无服务内容</string>
+    <string name="text_empty_dynamic">暂无动态内容</string>
+    <string name="text_empty_orders">暂无相关订单</string>
+    <string name="text_empty_goods">暂无商品信息</string>
+    <string name="text_empty_activity">暂无相关活动</string>
+    <string name="text_empty_service_consultation">暂无服务咨询内容</string>
+    <string name="text_empty_service_consultation_user">暂无咨询人员</string>
+    <string name="text_empty_service_qa">暂无服务问答内容</string>
+    <string name="text_empty_dynamic_comment">暂无动态评论内容</string>
+    <string name="text_empty_activity_registration">暂无活动报名内容</string>
+    <string name="text_empty_service_qa_list">暂无服务提问内容</string>
+    <string name="text_empty_branch">暂无分支机构</string>
+
+    <string name="hint_login_name">请输入帐号（注册的手机号码即为帐号）</string>
+    <string name="hint_login_pwd">请输入密码</string>
+    <string name="hint_register_phone">请输入手机号</string>
+    <string name="hint_register_code">请输入验证码</string>
+    <string name="hint_register_shop">请输入店铺名称</string>
+    <string name="hint_register_pwd">请输入密码（8-20位数字，字母组合)</string>
+    <string name="hint_register_repwd">请再次输入密码</string>
+    <string name="hint_modify_pwd_old">请输入当前密码</string>
+    <string name="hint_modify_pwd_new">请输入新密码(8-20位数字，字母组合)</string>
+
+    <string name="hint_phone">请输入手机号</string>
+
+
+    <string name="hint_service_publis_name">请输入服务名称</string>
+    <string name="hint_service_publis_phone">请填写客服电话</string>
+    <string name="hint_service_publis_content">请输入服务介绍</string>
+    <string name="hint_service_publis_content_promotion">请输入促销文案</string>
+    <string name="hint_service_publis_flag">最多3个标签，每个标签6个字</string>
+    <string name="hint_service_publis_process_schedule">请填写当日具体安排内容</string>
+    <string name="hint_service_publis_introduction">请填写服务介绍内容</string>
+    <string name="hint_activity_publis_detail">请填写活动介绍内容</string>
+
+    <string name="hint_activity_publis_name">请输入活动名称</string>
+    <string name="hint_activity_publis_content">请输入活动介绍</string>
+
+    <string name="hint_dynamic_publis_content">请输入您的动态内容</string>
+    <string name="hint_select_begin_date">点击选择开始时间</string>
+    <string name="hint_select_end_date">点击选择结束时间</string>
+    <string name="hint_activity_address">请选择活动地区</string>
+    <string name="hint_activity_address_input">请填写街道，楼号，门牌号</string>
+    <string name="hint_activity_phone_input">请填写客服电话</string>
+    <string name="hint_activity_person_input">请填写活动上限人数</string>
+    <string name="hint_goods_select_type">请选择商品类别</string>
+    <string name="hint_goods_select_specifications">请完善价格信息</string>
+    <string name="hint_goods_publis_name">请输入商品名称</string>
+    <string name="hint_goods_publis_content">请输入商品简介</string>
+    <string name="hint_goods_publis_price">请输入商品价格</string>
+    <string name="hint_goods_publis_stock">请填写商品库存~</string>
+
+    <string name="hint_goods_select_address">请选择商品发货地</string>
+
+    <string name="hint_goods_publis_brand">请输入商品品牌</string>
+    <string name="hint_goods_publis_product_name">请输入商品品名</string>
+    <string name="hint_goods_select_commodity_origin">请选择商品产地</string>
+    <string name="hint_goods_courier_number">请填写快递单号</string>
+    <string name="hint_goods_publis_commodity_origin">请填写商品产地</string>
+    <string name="hint_goods_publis_freight_amount">请输入运费金额</string>
+
+    <string name="hint_goods_specifications">请输入商品规格(最多输入15个字符)</string>
+    <string name="hint_goods_stock">请输入商品库存</string>
+    <string name="hint_goods_publis_price_old">请输入商品原价</string>
+    <string name="hint_goods_publis_price_now">请输入商品现价</string>
+    <string name="hint_goods_publis_phone">请填写客服电话</string>
+
+    <string name="hint_search_city">搜索城市</string>
+    <string name="hint_search_goods_type">搜索三级类目</string>
+
+    <string name="hint_branch_1">请填写机构名称</string>
+    <string name="hint_branch_2">请选择所在地区</string>
+    <string name="hint_branch_3">请填写详细地址(街道，楼号等)</string>
+    <string name="hint_branch_4">请选择营业时间</string>
+    <string name="hint_branch_5">请填写联系电话</string>
+
+
+
+    <string name="title_user_modify_password">修改密码</string>
+
+    <string name="title_service_publish">服务信息</string>
+    <string name="title_service_publish_banner">服务轮播图</string>
+    <string name="title_service_publish_promotion">服务促销信息</string>
+    <string name="title_service_publish_privilege">服务特权</string>
+    <string name="title_service_publish_process">服务流程</string>
+    <string name="title_service_publish_introduction">服务介绍</string>
+    <string name="title_service_detail">服务预览</string>
+
+
+
+    <string name="hint_reply_content">回复：%1$s</string>
+
+    <string name="title_service_menu_1">轮播图片</string>
+    <string name="title_service_menu_2">服务信息</string>
+    <string name="title_service_menu_3">促销信息</string>
+    <string name="title_service_menu_4">服务特权</string>
+    <string name="title_service_menu_5">服务流程</string>
+    <string name="title_service_menu_6">服务介绍</string>
+
+    <string name="title_activity_menu_2">活动信息</string>
+    <string name="title_activity_menu_3">活动详情</string>
+    <string name="title_activity_menu_4">查看报名</string>
+
+
+
+    <string name="title_customer_service_settings">客服设置</string>
+
+    <string name="title_service_type">选择服务类型</string>
+    <string name="title_service_management">我的服务</string>
+    <string name="title_enterprise_type">选择机构类型</string>
+
+    <string name="title_activity_publish_banner">活动封面图</string>
+    <string name="title_activity_publish_informaction">活动信息</string>
+    <string name="title_activity_publish_detail">活动详情</string>
+    <string name="title_activity_management">我的活动</string>
+    <string name="title_activity_dynamic">我的动态</string>
+    <string name="title_activity_preview">活动预览</string>
+
+    <string name="title_dynamic_publish">发布动态</string>
+    <string name="title_dynamic_comment">动态评论</string>
+    <string name="title_dynamic_detail">动态详情</string>
+
+    <string name="title_goods_city">请选择所在地区</string>
+
+    <string name="title_activity_select_address">定位地址</string>
+    <string name="title_funs_funs">我的粉丝</string>
+    <string name="title_setting_setup">管理</string>
+
+
+
+    <string name="title_interaction">我的互动</string>
+    <string name="title_interaction_1">服务咨询列表</string>
+    <string name="title_interaction_2">服务问答列表</string>
+    <string name="title_interaction_3">商品咨询列表</string>
+    <string name="title_interaction_4">动态评论列表</string>
+    <string name="title_interaction_5">活动报名列表</string>
+    <string name="title_interaction_6">历史咨询</string>
+
+
+    <string name="title_customer_service">客服电话</string>
+
+    <string name="title_goods_publish_banner">商品图片</string>
+    <string name="title_goods_publish_informaction">商品信息</string>
+    <string name="title_goods_orders_manager">订单列表</string>
+    <string name="title_goods_orders_deliver_informaction">发货信息</string>
+    <string name="title_goods_commodity_specifications">商品规格</string>
+    <string name="title_goods_type">商品类别</string>
+    <string name="title_goods_parameters">产品参数</string>
+    <string name="title_goods_preview">商品预览</string>
+    <string name="title_goods_orders_refund_informaction">退款详情</string>
+
+    <string name="title_branch">分支机构</string>
+    <string name="title_ad">广告设置</string>
+
+    <string name="str_goods_publish_11">商品图片为介绍商品的图片，在商品详情页中展示</string>
+    <string name="str_goods_publish_12">图片的宽高比例为 1:1</string>
+    <string name="str_goods_publish_13">最多可设置9张图片，最少1张</string>
+    <string name="str_goods_publish_14">首张图片默认为主图，在商品列表中展示</string>
+    <string name="str_goods_publish_15">通过商品信息，让用户对于本商品有一个大概的了解</string>
+    <string name="str_goods_publish_16">商品名称要求不少于15，不多于30个字</string>
+    <string name="str_goods_publish_17">促销标签少于10个文字，最多2个标签</string>
+    <string name="str_goods_publish_18">商品标签文字不超过10个，最多3个标签</string>
+    <string name="str_goods_publish_19">商品编号</string>
+    <string name="str_goods_publish_20">默认</string>
+    <string name="str_goods_publish_21">选择商品类别</string>
+    <string name="str_goods_publish_22">商品名称</string>
+    <string name="str_goods_publish_221">商品简介</string>
+    <string name="str_goods_publish_23">商品价格</string>
+    <string name="str_goods_publish_24">商品规格</string>
+    <string name="str_goods_publish_25">商品标签</string>
+    <string name="str_goods_publish_26">添加标签可以让用户更容易搜索到此商品</string>
+    <string name="str_goods_publish_27">商品促销标签</string>
+    <string name="str_goods_publish_28">促销标签可以让用户明确商品优惠</string>
+    <string name="str_goods_publish_29">选择商品发货地</string>
+
+    <string name="str_goods_publish_30">是否包邮</string>
+    <string name="str_goods_publish_31">七天无理由退货</string>
+
+    <string name="str_goods_publish_32">商品详情图片为介绍商品的图片，在商品详情页中展示</string>
+    <string name="str_goods_publish_33">每段文字介绍不超过2000字</string>
+    <string name="str_goods_publish_34">商品详情图片最少1张，最多无限制</string>
+    <string name="str_goods_publish_35">按图片添加顺序由上至下在商品详情页展示</string>
+
+    <string name="str_goods_publish_36">商品品牌</string>
+    <string name="str_goods_publish_37">商品品名</string>
+    <string name="str_goods_publish_38">商品产地</string>
+    <string name="str_goods_publish_39">运费 ￥</string>
+    <string name="str_goods_publish_40">价格 ￥</string>
+    <string name="str_goods_publish_41">总库存</string>
+    <string name="str_goods_publish_42">客服电话</string>
+    <string name="str_goods_publish_43">商品详情</string>
+
+    <string name="str_goods_publish_44">产品参数</string>
+    <string name="str_goods_publish_45">修改参数信息</string>
+    <string name="str_goods_publish_46">请添加参数信息</string>
+
+    <string name="str_goods_publis_discount_flag">最多可添加2个标签</string>
+
+    <string name="str_goods_orders_menu_1">待发货</string>
+    <string name="str_goods_orders_menu_2">待确认</string>
+    <string name="str_goods_orders_menu_3">已完成</string>
+    <string name="str_goods_orders_menu_4">退款</string>
+
+    <string name="str_goods_orders_1">收货人</string>
+    <string name="str_goods_orders_2">订单编号</string>
+    <string name="str_goods_orders_3">下单时间</string>
+    <string name="str_goods_orders_4">实付金额：</string>
+    <string name="str_goods_orders_5">待买家确认收货</string>
+    <string name="str_goods_orders_6">买家已收货</string>
+
+    <string name="str_goods_deliver_1">收件人</string>
+    <string name="str_goods_deliver_2">收货地址</string>
+    <string name="str_goods_deliver_3">请选择快递公司</string>
+
+    <string name="str_goods_commodity_specifications_1">规格</string>
+    <string name="str_goods_commodity_specifications_2">当前库存</string>
+    <string name="str_goods_commodity_specifications_3">添加预览图</string>
+    <string name="str_goods_commodity_specifications_4">单价 ￥</string>
+
+    <string name="str_goods_type_count">共有%1$d种分类</string>
+
+    <string name="str_goods_refund_1">退款说明:</string>
+    <string name="str_goods_refund_2">退款金额：</string>
+
+
+    <string name="title_goods">我的商品</string>
+    <string name="title_goods_detail">商品详情</string>
+
+    <string name="title_goods_menu_1">商品图片</string>
+    <string name="title_goods_menu_2">商品信息</string>
+    <string name="title_goods_menu_3">商品详情</string>
+    <string name="title_goods_menu_4">修改库存</string>
+    <string name="title_goods_menu_5">修改参数</string>
+
+
+    <string name="error_user_info_empty">请刷新列表以获取店铺信息！</string>
+
+
+    <string name="error_service_type_select">请选择服务类型</string>
+    <string name="error_service_name_empty">请选择服务类型</string>
+    <string name="error_service_content_empty">请选择服务类型</string>
+    <string name="error_service_flag">请输入标签内容，最多3个标签，每个标签6个字</string>
+    <string name="error_service_flag_empty">请至少添加一个特色标签</string>
+    <string name="error_service_photo_empty">请至少添加一张服务轮播图</string>
+    <string name="error_service_privilege_empty">请至少添加一项特权项内容</string>
+    <string name="error_service_introduction_empty">请至少添加一项服务介绍内容</string>
+    <string name="error_goods_discount_flag">最多可添加2个标签</string>
+    <string name="error_goods_details_empty">请至少添加一项商品介绍内容</string>
+    <string name="error_video_cut_save">视频裁剪失败</string>
+    <string name="error_video_time">视频文件请小于5分钟</string>
+    <string name="error_delete_comment">请选择要删除的评论</string>
+    <string name="error_photo_empty_commodity_specifications">请添加预览图片</string>
+    <string name="error_photo_empty_activity">请添加活动轮播图片</string>
+    <string name="error_price_low">请修改商品原价</string>
+    <string name="error_nosave_commodity_specifications">您有尚未保存的信息！</string>
+    <string name="error_photo_size">请添加2Mb以内的图片</string>
+    <string name="error_register_pwd_eq_repwd">两次密码输入不一致，请重新输入</string>
+    <string name="error_goods_type_empty">请选择商品类型</string>
+    <string name="error_dynamic_content">请编辑动态内容</string>
+    <string name="error_activity_date">活动开始时间应早于活动结束时间</string>
+    <string name="error_activity_begin_date">请选择活动开始时间</string>
+    <string name="error_activity_end_date">请选择活动结束时间</string>
+    <string name="error_activity_details_empty">请至少添加一项活动介绍内容</string>
+    <string name="error_select_express">请选择快递公司</string>
+
+    <string name="error_service_process_step">请先添加服务步骤</string>
+
+    <string name="error_video_size">请调整截取时间或源视频分辨率</string>
+
+    <string name="error_protocol">请阅读并同意《干细胞之家服务协议》和《隐私政策》</string>
+
+    <string name="error_header">请添加头像</string>
+    <string name="error_banner">请添加封皮</string>
+
+    <string name="error_ad_photo_count">最多可添加6张广告图片</string>
+    <string name="error_ad_photo_empty">请添加广告图片</string>
+
+    <string name="error_service_qa_comment">请填写回复信息</string>
+    <string name="error_consultation_user_phone_empty">该用户未填写电话信息</string>
+
+    <string name="error_phone_length">请输入11位的手机号码</string>
+
+    <string name="error_branch_photo">请添加机构图片</string>
+    <string name="error_branch_time">请设置正确的营业时间</string>
+
+    <string name="success_register">注册成功，请登录</string>
+    <string name="success_find_password">登录密码已更新，请登录</string>
+    <string name="success_modify_password">您的密码已更新</string>
+    <string name="success_update_online">已上架</string>
+    <string name="success_update_offline">已下架</string>
+
+    <string name="success_service_add">服务信息已添加</string>
+    <string name="success_service_modify">服务信息已修改</string>
+    <string name="success_service_banner_add">服务轮播图已添加</string>
+    <string name="success_service_banner_modify">服务轮播图已修改</string>
+    <string name="success_service_promotion_add">服务促销信息已添加</string>
+    <string name="success_service_promotion_modify">服务促销信息已修改</string>
+    <string name="success_service_privilege_add">服务特权信息已添加</string>
+    <string name="success_service_privilege_modify">服务特权信息已修改</string>
+    <string name="success_service_process_add">服务流程信息已添加</string>
+    <string name="success_service_process_modify">服务流程信息已修改</string>
+    <string name="success_service_introduction_add">服务介绍信息已添加</string>
+    <string name="success_service_introduction_modify">服务介绍信息已修改</string>
+
+    <string name="success_branch_modify">分支机构信息已修改</string>
+    <string name="success_branch_add">分支机构信息已添加</string>
+
+    <string name="success_dynamic_add">动态信息已添加</string>
+
+
+    <string name="success_activity_banner_add">活动轮播图已添加</string>
+    <string name="success_activity_banner_modify">活动轮播图已修改</string>
+    <string name="success_activity_informaction_add">活动信息已添加</string>
+    <string name="success_activity_informaction_modify">活动信息已修改</string>
+    <string name="success_activity_detail_add">活动介绍信息已添加</string>
+    <string name="success_activity_detail_modify">活动介绍信息已修改</string>
+
+    <string name="success_goods_banner_add">商品轮播图已添加</string>
+    <string name="success_goods_banner_modify">商品轮播图已修改</string>
+    <string name="success_goods_informaction_add">商品信息已添加</string>
+    <string name="success_goods_informaction_modify">商品信息已修改</string>
+    <string name="success_goods_detail_add">商品详情已添加</string>
+    <string name="success_goods_detail_modify">商品详情已修改</string>
+    <string name="success_goods_specifications_modify">商品规格已修改</string>
+    <string name="success_goods_parameters_modify">商品参数已修改</string>
+
+    <string name="success_ad_modify">广告设置信息已更新</string>
+    <string name="success_improve_informaction_modify">公司信息已更新</string>
+    <string name="success_customer_service_modify">客服信息已更新</string>
+
+    <string name="str_token_refresh">Token已更新，请刷新页面</string>
+
+    <string name="str_login_register">没有帐号？</string>
+    <string name="str_register">已注册</string>
+
+    <string name="str_goods_count">%1$d人已购买</string>
+
+    <string name="str_dynamic_comment_all">全部评论</string>
+    <string name="str_dynamic_comment_count">（共%1$d条）</string>
+    <string name="str_search_address">正在获取位置信息...</string>
+    <string name="str_search_address_click_map">点击地图以获取位置信息</string>
+
+    <string name="str_service_publish_1">通过文字描述，让用户对于此项服务有一个概要性的了解和认知</string>
+    <string name="str_service_publish_2">标题字数要求不多于20个字</string>
+    <string name="str_service_publish_3">文字描述要求不多于300个字</string>
+    <string name="str_service_publish_4">每个关键字不多于10个字，最多可设置5个</string>
+    <string name="str_service_publish_5">服务名称</string>
+    <string name="str_service_publish_6">服务介绍</string>
+    <string name="str_service_publish_7">选择服务类型</string>
+    <string name="str_service_publish_8">特色标签</string>
+    <string name="str_service_publish_9">标签可以让用户一目了然了解服务特色</string>
+    <string name="str_service_publish_10">客服电话</string>
+
+
+    <string name="str_service_publish_21">banner图片为服务介绍的图片，在服务列表与服务详情功能中展示</string>
+    <string name="str_service_publish_22">图片的宽高比例为 1:1</string>
+    <string name="str_service_publish_23">最多可设置9张图片，最少1张</string>
+    <string name="str_service_publish_24">首张图片默认为封皮图片，在服务列表中展示</string>
+
+    <string name="str_service_publish_31">通过促销信息可以让您在同类企业中脱颖而出，引流更快速</string>
+    <string name="str_service_publish_32">优惠信息最多100个字</string>
+    <string name="str_service_publish_33">最多可设置5个促销活动</string>
+    <string name="str_service_publish_34">每个促销活动不超过10个字</string>
+    <string name="str_service_publish_35">促销标签</string>
+    <string name="str_service_publish_36">标签可以让用户一目了然了解服务特色</string>
+    <string name="str_service_publish_37">促销文案</string>
+    <string name="str_service_publish_38">促销文案是对促销标签的文字解释，最多可填写100个字</string>
+
+
+    <string name="str_service_publish_41">服务特权是购买此服务的用户所享有的特权，多为交通，住宿以及售后方面</string>
+    <string name="str_service_publish_42">从可选特权列表中进行选取</string>
+    <string name="str_service_publish_43">特权选择后，需要要填写相关特权服务</string>
+    <string name="str_service_publish_44">描述为特权的限定条件，为避免分歧请认真填写</string>
+    <string name="str_service_publish_45">选择特权</string>
+
+    <string name="str_service_publish_51">服务流程是向用户清晰地描述服务全过程，描述尽可能清晰明了</string>
+    <string name="str_service_publish_52">清晰的步骤，让用户一目了然</string>
+    <string name="str_service_publish_53">明确的日程，让用户更好地安排时间</string>
+    <string name="str_service_publish_54">让消费与服务过程更加透明，减少客服负担</string>
+    <string name="str_service_publish_55">服务流程</string>
+    <string name="str_service_publish_56">请按“步骤”-“日程”-“内容”的结构进行添加</string>
+
+    <string name="str_service_publis_process_step">请填写步骤%1$s描述</string>
+    <string name="str_service_publis_process_schedule">请填写第%1$s天安排描述</string>
+
+
+    <string name="str_service_publish_61">以图文的形式，向用户进行详细的服务介绍</string>
+    <string name="str_service_publish_62">图片格式为JPG，PNG</string>
+    <string name="str_service_publish_63">图片最大可上传2MB之内</string>
+    <string name="str_service_publish_64">每段文字介绍不超过2000字</string>
+    <string name="str_service_publish_65">服务介绍</string>
+    <string name="str_service_publish_66">点击右侧按钮进行文字或图片的添加操作</string>
+
+    <string name="str_service_detail_answer">%1$d个回答</string>
+
+
+    <string name="str_activity_publish_11">banner图片为服务介绍的图片，在服务列表与服务详情功能中展示</string>
+    <string name="str_activity_publish_12">图片的宽高比例为 1:1</string>
+    <string name="str_activity_publish_13">最多可设置9张图片，最少1张</string>
+    <string name="str_activity_publish_14">首张图片默认为封皮图片，在服务列表中展示</string>
+
+    <string name="str_activity_publish_21">通过文字描述，让用户对于此项活动有一个概要性的了解和认知</string>
+    <string name="str_activity_publish_22">标题字数要求不多于20个字</string>
+    <string name="str_activity_publish_23">文字描述要求不多于300个字</string>
+    <string name="str_activity_publish_24">每个关键字不多于10个字，最多可设置5个</string>
+    <string name="str_activity_publish_25">活动名称</string>
+    <string name="str_activity_publish_26">活动介绍</string>
+    <string name="str_activity_publish_27">标签可以让用户一目了然了解活动特色</string>
+
+    <string name="str_activity_publish_31">以图文的形式，向用户进行详细的活动介绍</string>
+    <string name="str_activity_publish_32">图片格式为JPG，PNG</string>
+    <string name="str_activity_publish_33">图片最大可上传2MB之内</string>
+    <string name="str_activity_publish_34">每段文字介绍不超过2000字</string>
+    <string name="str_activity_publish_35">活动详情</string>
+
+    <string name="str_activity_publish_36">活动时间</string>
+    <string name="str_activity_publish_37">活动地址</string>
+    <string name="str_activity_publish_38">详细地址</string>
+    <string name="str_activity_publish_39">自动获取定位</string>
+
+    <string name="str_activity_publish_41">定位准确的标签会被精准搜索~</string>
+    <string name="str_activity_publish_42">活动人数</string>
+    <string name="str_activity_publish_43">客服电话</string>
+
+
+    <string name="str_activity_date">活动时间：</string>
+    <string name="str_activity_address">活动地址：</string>
+    <string name="str_activity_enrollment">共%1$d人报名</string>
+
+
+
+    <string name="str_service_type_1">选择服务分类</string>
+    <string name="str_service_type_2">选择系统</string>
+    <string name="str_service_type_3">选择名称</string>
+
+    <string name="str_interaction_review">共%1$d条评论</string>
+    <string name="str_interaction_qa">共%1$d条提问</string>
+    <string name="str_interaction_consultation">共%1$d人咨询过</string>
+    <string name="str_interaction_registration">共%1$d个报名</string>
+    <string name="str_interaction_consultation_user">人员信息列表</string>
+    <string name="str_interaction_qa_list">提问列表</string>
+
+    <string name="str_interaction_activity_end_time">报名截止时间：</string>
+    <string name="str_interaction_activity_registration_detail">活动报名详情</string>
+
+
+    <string name="str_dynamic_menu_1">全部</string>
+    <string name="str_dynamic_menu_2">文章</string>
+    <string name="str_dynamic_menu_3">视频</string>
+    <string name="str_dynamic_adapter_1">%1$d展现</string>
+    <string name="str_dynamic_adapter_2">%1$d次阅读</string>
+    <string name="str_dynamic_adapter_3">%1$d评论</string>
+
+
+    <string name="str_customer_service_settings_menu_1">商品客服</string>
+    <string name="str_customer_service_settings_menu_2">服务客服</string>
+    <string name="str_customer_service_settings_menu_3">活动客服</string>
+
+
+    <string name="str_ad_tips">点击添加广告图片，在机构首页banner区域展示最多可添加6张，长按编辑图片</string>
+
+
+    <string name="str_user_count">共%1$d人</string>
+    <string name="str_qa_count">共%1$d个提问</string>
+
+    <string name="str_consultation_date">提交信息时间：</string>
+    <string name="str_registration_date">报名时间：</string>
+    <string name="str_qa_date">提问时间：</string>
+
+
+    <string name="str_home_count_1">粉丝数</string>
+    <string name="str_home_count_2">服务数</string>
+    <string name="str_home_count_3">动态数</string>
+    <string name="str_home_count_4">商品数</string>
+    <string name="str_home_count_5">活动数</string>
+
+    <string name="str_home_item_1">昨日数据</string>
+    <string name="str_home_item_2">我的服务</string>
+    <string name="str_home_item_3">我的商品</string>
+    <string name="str_home_item_4">我的动态</string>
+    <string name="str_home_item_5">我的活动</string>
+    <string name="str_home_item_6">常用功能</string>
+    <string name="str_home_tips_1">数据截止至昨日%1$s前</string>
+    <string name="str_home_tips_2">已展示服务%1$s个/待展示服务%2$s个</string>
+    <string name="str_home_tips_3">已上架商品%1$s个/待上架商品%2$s个</string>
+    <string name="str_home_tips_4">已发布动态%1$s个</string>
+    <string name="str_home_tips_5">进行中活动%1$s个/总活动数%2$s</string>
+
+    <string name="str_home_count_11">动态展现量</string>
+    <string name="str_home_count_12">动态评论量</string>
+    <string name="str_home_count_13">动态点赞量</string>
+    <string name="str_home_count_14">服务展现量</string>
+    <string name="str_home_count_15">服务收藏量</string>
+    <string name="str_home_count_16">服务咨询量</string>
+    <string name="str_home_count_17">商品展现量</string>
+    <string name="str_home_count_18">商品收藏量</string>
+    <string name="str_home_count_19">商品订单量</string>
+
+    <string name="str_home_item_2_1">发布新服务</string>
+    <string name="str_home_item_2_2">展示中服务%1$s</string>
+    <string name="str_home_item_2_3">新的咨询</string>
+
+    <string name="str_home_item_3_1">发布新商品</string>
+    <string name="str_home_item_3_2">商品管理%1$s</string>
+    <string name="str_home_item_3_3">待处理订单</string>
+
+
+    <string name="str_home_item_4_1">发布动态</string>
+    <string name="str_home_item_4_2">动态管理</string>
+    <string name="str_home_item_4_3">动态评论</string>
+
+    <string name="str_home_item_5_1">创建活动</string>
+    <string name="str_home_item_5_2">活动管理</string>
+    <string name="str_home_item_5_3">新的报名</string>
+
+    <string name="str_home_item_6_1">我的互动</string>
+    <string name="str_home_item_6_2">分支机构</string>
+    <string name="str_home_item_6_3">广告设置</string>
+    <string name="str_home_item_6_4">客服设置</string>
+    <string name="str_home_item_6_5">修改密码</string>
+
+    <string name="str_improve_information_1">基本信息</string>
+    <string name="str_improve_information_3">点击更换头像</string>
+    <string name="str_improve_information_11">企业名称</string>
+    <string name="str_improve_information_12">企业类型</string>
+    <string name="str_improve_information_13">董事长</string>
+    <string name="str_improve_information_14">成立日期</string>
+    <string name="str_improve_information_15">公司地址</string>
+    <string name="str_improve_information_16">企业标签</string>
+    <string name="str_improve_information_17">企业介绍</string>
+    <string name="str_improve_information_18">微信号</string>
+    <string name="str_improve_information_19">机构类型</string>
+    <string name="str_improve_information_2">联系方式</string>
+    <string name="str_improve_information_21">企业官网</string>
+    <string name="str_improve_information_22">联系电话</string>
+
+    <string name="str_branch_1">机构名称</string>
+    <string name="str_branch_2">机构地址</string>
+    <string name="str_branch_3">详细地址</string>
+    <string name="str_branch_4">营业时间</string>
+    <string name="str_branch_5">联系电话</string>
+
+    <string name="str_branch_6">点击添加机构图片，在分支机构列表中展示</string>
+
+</resources>

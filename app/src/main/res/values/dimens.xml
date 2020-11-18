@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="radius_button_small">5dp</dimen>
+    <dimen name="radius_button">10dp</dimen>
+    <dimen name="radius_button_blue">15dp</dimen>
+    <dimen name="radius_button_blue_full">5dp</dimen>
+    <dimen name="radius_button_round">20dp</dimen>
+    <dimen name="radius_edit">5dp</dimen>
+    <dimen name="radius_dot">30dp</dimen>
+    <dimen name="radius_container">10dp</dimen>
+    <dimen name="radius_flag">15dp</dimen>
+    <dimen name="radius_count">10dp</dimen>
+    <dimen name="radius_service_type">10dp</dimen>
+    <dimen name="radius_service_privilege">10dp</dimen>
+    <dimen name="radius_button_flag">5dp</dimen>
+    <dimen name="radius_button_photo">5dp</dimen>
+    <dimen name="radius_line">10dp</dimen>
+
+    <dimen name="width_home_menu">30dp</dimen>
+    <dimen name="height_home_menu">30dp</dimen>
+
+    <dimen name="width_setup_menu">20dp</dimen>
+    <dimen name="height_setup_menu">20dp</dimen>
+
+    <dimen name="width_login">25dp</dimen>
+    <dimen name="height_login">25dp</dimen>
+
+    <dimen name="width_comment_check">25dp</dimen>
+    <dimen name="height_comment_check">25dp</dimen>
+
+    <dimen name="width_phone">90dp</dimen>
+    <dimen name="height_phone">150dp</dimen>
+
+    <dimen name="width_dot">5dp</dimen>
+    <dimen name="height_dot">5dp</dimen>
+
+    <dimen name="width_customer_service">25dp</dimen>
+    <dimen name="height_customer_service">25dp</dimen>
+
+    <dimen name="width_service_type">25dp</dimen>
+    <dimen name="height_service_type">25dp</dimen>
+    <dimen name="width_service_list">25dp</dimen>
+    <dimen name="height_service_list">25dp</dimen>
+    <dimen name="width_activity_list">17dp</dimen>
+    <dimen name="height_activity_list">17dp</dimen>
+
+    <dimen name="width_dynamic_menu">30dp</dimen>
+    <dimen name="height_dynamic_menu">30dp</dimen>
+
+    <dimen name="width_dynamic_list">20dp</dimen>
+    <dimen name="height_dynamic_list">20dp</dimen>
+
+    <dimen name="width_arrow_right">25dp</dimen>
+    <dimen name="height_arrow_right">25dp</dimen>
+
+    <dimen name="width_service_menu">30dp</dimen>
+    <dimen name="height_service_menu">30dp</dimen>
+
+    <dimen name="width_interaction_menu">25dp</dimen>
+    <dimen name="height_interaction_menu">25dp</dimen>
+
+    <dimen name="width_interaction_image">60dp</dimen>
+    <dimen name="height_interaction_image">40dp</dimen>
+
+    <dimen name="width_goods_menu">25dp</dimen>
+    <dimen name="height_goods_menu">25dp</dimen>
+
+    <dimen name="width_goods_image">50dp</dimen>
+    <dimen name="height_goods_image">50dp</dimen>
+
+    <dimen name="width_goods_icon">20dp</dimen>
+    <dimen name="height_goods_icon">20dp</dimen>
+
+    <dimen name="width_activity_icon">15dp</dimen>
+    <dimen name="height_activity_icon">15dp</dimen>
+
+    <dimen name="width_user_header_image">35dp</dimen>
+    <dimen name="height_user_header_image">35dp</dimen>
+
+    <dimen name="height_button">40dp</dimen>
+
+    <dimen name="padding_all_back">15dp</dimen>
+
+    <dimen name="height_title">45dp</dimen>
+    <dimen name="height_text_line">45dp</dimen>
+    <dimen name="height_separator_line">40dp</dimen>
+</resources>

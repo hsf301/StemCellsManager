@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5EA2F8</color>
+    <color name="colorPrimaryDark">#1D6FD7</color>
+    <color name="colorAccent">#1D6FD7</color>
+
+    <color name="colorSwipeRefreshLayout1">#4169e1</color>
+    <color name="colorSwipeRefreshLayout2">#eb6f25</color>
+    <color name="colorSwipeRefreshLayout3">#FF4081</color>
+
+    <color name="bgContainer">#f2f2f2</color>
+    <color name="bgdialog">#50000000</color>
+
+    <color name="line">#dddddd</color>
+    <color name="line_add">#DEDEDE</color>
+    <color name="line_menu">#F8F8F8</color>
+
+</resources>

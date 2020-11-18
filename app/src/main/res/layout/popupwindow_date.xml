@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/line">
+
+            <Button
+                android:id="@+id/cancle"
+                style="@style/TextGray"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/btn_cancle" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="选择日期" />
+
+            <Button
+                android:id="@+id/ok"
+                style="@style/TextBlack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/btn_ok" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@color/line" />
+
+    </LinearLayout>
+
+</LinearLayout>

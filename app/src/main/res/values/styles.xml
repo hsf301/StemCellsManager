@@ -1,0 +1,224 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@color/bgdialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MyRadioButton" parent="TextBlack12Sp">
+        <item name="android:button">@drawable/bg_radio</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextTitleBlack">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextWhite">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextWhite10Sp">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextWhite12Sp">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextWhite14Sp">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextWhite7Sp">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">7sp</item>
+    </style>
+
+    <style name="TextBlack">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextBlack10Sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextBlack12Sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextBlack14Sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextGray">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextGray14Sp">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextGray12Sp">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGray10Sp">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextGray6">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextGray6_12Sp">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGray6_10Sp">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextGray3">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextGray3_12Sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGray3_10Sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="TextGrayC_12Sp">
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextRed">
+        <item name="android:textColor">#FA2209</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextRed12Sp">
+        <item name="android:textColor">#FA2209</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextRed10Sp">
+        <item name="android:textColor">#FA2209</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextBlue">
+        <item name="android:textColor">#1D6FD7</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextBlue10Sp">
+        <item name="android:textColor">#1D6FD7</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextBlue12Sp">
+        <item name="android:textColor">#1D6FD7</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextCount1">
+        <item name="android:textColor">#7985CB</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCount2">
+        <item name="android:textColor">#FF8B65</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCount3">
+        <item name="android:textColor">#4DB7AD</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="EditText13sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="EditText10sp">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="EditTextRed13sp">
+        <item name="android:textColor">#FF8B65</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="EditTextBlue10sp">
+        <item name="android:textColor">#1D6FD7</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="EditTextBlue12sp">
+        <item name="android:textColor">#1D6FD7</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="TextGreen12Sp">
+        <item name="android:textColor">#09fa69</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

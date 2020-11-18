@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg_white_top_round"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            app:srcCompat="@mipmap/icon_close" />
+
+        <TextView
+            style="@style/TextTitleBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_enterprise_type"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dp_10">
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/TextWhite12Sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_button"
+                android:text="@string/btn_save" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btn_save"
+                android:layout_margin="@dimen/dp_10">
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+                <include
+                    layout="@layout/include_empty_page"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

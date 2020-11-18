@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgContainer">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tmp"
+        android:layout_below="@+id/top"
+        android:layout_margin="@dimen/dp_10" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_improve_information_1"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/bg_blue">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_header"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/icon_default_header" />
+
+                        <TextView
+                            android:id="@+id/tv_tips_header"
+                            style="@style/TextBlue12Sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="点击更换头像" />
+
+                        <TextView
+                            android:id="@+id/tv_tips_image"
+                            style="@style/TextGrayC_12Sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="点击蓝色区域\n添加企业封皮，在机构首页中展示" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="-20dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_11" />
+
+                        <EditText
+                            android:id="@+id/et_qymc"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="请填写企业名称" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_12" />
+
+                        <EditText
+                            android:id="@+id/et_qylx"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="请填写企业类型" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_19" />
+
+                        <TextView
+                            android:id="@+id/tv_jglx"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toLeftOf="@+id/arrow"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="请选择机构类型" />
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="@dimen/width_arrow_right"
+                            android:layout_height="@dimen/height_arrow_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@mipmap/icon_arrow_right_gray" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_13" />
+
+                        <EditText
+                            android:id="@+id/et_dsz"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="请填写董事长姓名" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_14" />
+
+                        <TextView
+                            android:id="@+id/tv_clrq"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toLeftOf="@+id/arrow"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="请选择成立日期" />
+
+                        <ImageView
+                            android:id="@id/arrow"
+                            android:layout_width="@dimen/width_arrow_right"
+                            android:layout_height="@dimen/height_arrow_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@mipmap/icon_arrow_right_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_15" />
+
+                        <TextView
+                            android:id="@+id/tv_gsdz"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toLeftOf="@+id/iv_location"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="自动获取定位" />
+
+                        <ImageView
+                            android:id="@+id/iv_location"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            app:srcCompat="@mipmap/icon_location" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_16" />
+
+                        <EditText
+                            android:id="@+id/et_qybq"
+                            style="@style/EditText13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toRightOf="@+id/tmp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="请填写企业标签(最多15个字符)"
+                            android:maxLength="15" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@id/tmp"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/str_improve_information_17" />
+
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_qyjs"
+                        style="@style/EditText13sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tmp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="top|left"
+                        android:hint="请填写企业介绍~"
+                        android:maxLength="150"
+                        android:minHeight="50dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/tv_count"
+                            style="@style/TextGray10Sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0/150" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                style="@style/TextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_improve_information_2"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@id/tmp"
+                        style="@style/TextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_improve_information_21" />
+
+                    <EditText
+                        android:id="@+id/et_qygw"
+                        style="@style/EditText13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/tmp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="请填写企业网址"
+                        android:inputType="textVisiblePassword" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@id/tmp"
+                        style="@style/TextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_improve_information_22" />
+
+                    <EditText
+                        android:id="@+id/et_lxdh"
+                        style="@style/EditText13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/tmp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="请填写联系电话"
+                        android:inputType="phone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@id/tmp"
+                        style="@style/TextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_improve_information_18" />
+
+                    <EditText
+                        android:id="@+id/et_wxh"
+                        style="@style/EditText13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/tmp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="请填微信号"
+                        android:inputType="textVisiblePassword" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@id/tmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/btn_login"
+            android:enabled="false"
+            android:text="@string/btn_save" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/height_title"
+            android:layout_height="@dimen/height_title"
+            android:padding="@dimen/padding_all_back"
+            app:srcCompat="@mipmap/icon_arrow_left_black" />
+
+    </RelativeLayout>
+</RelativeLayout>

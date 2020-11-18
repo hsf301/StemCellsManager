@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgContainer">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title"
+            android:background="@drawable/bg_title">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/height_title"
+                android:layout_height="@dimen/height_title"
+                android:padding="@dimen/padding_all_back"
+                app:srcCompat="@mipmap/icon_arrow_left_white" />
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/title_activity_dynamic" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignLeft="@+id/ll_all"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ll_all"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/bg_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="@dimen/width_dynamic_menu"
+                        android:layout_height="@dimen/height_dynamic_menu"
+                        android:padding="5dp"
+                        app:srcCompat="@mipmap/icon_menu_all_select" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/TextBlack14Sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_dynamic_menu_1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_file"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignLeft="@+id/ll_file"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ll_file"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/bg_line"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@id/iv_icon"
+                        android:layout_width="@dimen/width_dynamic_menu"
+                        android:layout_height="@dimen/height_dynamic_menu"
+                        android:padding="5dp"
+                        app:srcCompat="@mipmap/icon_menu_file" />
+
+                    <TextView
+                        android:id="@id/tv_name"
+                        style="@style/TextGray14Sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_dynamic_menu_2" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignLeft="@+id/ll_video"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ll_video"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/bg_line"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@id/iv_icon"
+                        android:layout_width="@dimen/width_dynamic_menu"
+                        android:layout_height="@dimen/height_dynamic_menu"
+                        android:padding="5dp"
+                        app:srcCompat="@mipmap/icon_menu_video" />
+
+                    <TextView
+                        android:id="@id/tv_name"
+                        style="@style/TextGray14Sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_dynamic_menu_3" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_white_top_round"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/btn_create"
+            style="@style/TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/bg_button"
+            android:text="@string/btn_create_dynamic" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tmp"
+        android:layout_below="@+id/top" />
+
+</RelativeLayout>

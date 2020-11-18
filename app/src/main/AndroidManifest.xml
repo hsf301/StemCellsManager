@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huashengfu.StemCellsManager">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:name=".AppApplication"
+        android:theme="@style/AppTheme">
+
+
+
+
+        <!--猫腰的高德key孙广智-->
+        <!--ee7ed8eaec07ed4d63bf4e0b4a7ba6a2-->
+
+        <!--自己测试用的高德key-->
+        <!--b1071ebd4248de2e02d0abf4f9e47956-->
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ee7ed8eaec07ed4d63bf4e0b4a7ba6a2"/>
+
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.activity.ActivityManagementActivity"/>
+        <activity android:name=".activity.dynamic.DynamicManagementActivity"/>
+        <activity android:name=".activity.dynamic.PublishDynamicActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.settings.ad.AdvertisingSettingsActivity"/>
+        <activity android:name=".activity.settings.user.ModifyPasswordActivity"/>
+        <activity android:name=".activity.settings.branch.BranchActivity"/>
+        <activity android:name=".activity.settings.CustomerServiceActivity"/>
+        <activity android:name=".activity.interaction.InteractionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.goods.GoodsManagementActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.goods.OrdersManagerActivity"/>
+        <activity android:name=".activity.goods.PublishGoodsInformactionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.service.PublishServiceActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.service.ServiceManagementActivity"/>
+        <activity android:name=".activity.service.PublishServiceBannerActivity"/>
+        <activity android:name=".activity.service.PublishServicePromotionActivity"/>
+        <activity android:name=".activity.service.PublishServicePrivilegeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.service.PublishServiceProcessActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.service.PublishServiceIntroductionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.activity.PublishActivityBannerActivity"/>
+        <activity android:name=".activity.activity.PublishActivityInformactionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.activity.PublishActivityDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.video.EsayVideoEditActivity"/>
+        <activity android:name=".activity.video.VideoPlayActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.map.SelectAddressActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.interaction.DynamicCommentActivity"/>
+        <activity android:name=".activity.goods.PublishGoodsBannerActivity"/>
+        <activity android:name=".activity.goods.PublishGoodsDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.DeliverGoodsInformactionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.CommoditySpecificationsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.service.PreviewServiceActivity"/>
+        <activity android:name=".activity.settings.user.FindPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.settings.user.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.GoodsTypeListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.GoodsParametersActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.ModifyGoodsBannerActivity"/>
+        <activity android:name=".activity.goods.ModifyGoodsInformactionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.ModifyGoodsParametersActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.ModifySpecificationsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.activity.ModifyActivityBannerActivity"/>
+        <activity android:name=".activity.activity.ModifyActivityInformactionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.activity.PreviewActivityActivity"/>
+        <activity android:name=".activity.goods.PreviewGoodsActivity"/>
+        <activity android:name=".activity.settings.branch.AddBranchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.goods.RefundInformactionActivity"/>
+        <activity android:name=".activity.settings.user.ImproveInformationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.settings.branch.ModifyBranchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|navigation|keyboard|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.settings.user.ProtocolActivity"/>
+        <activity android:name=".activity.settings.user.PrivacyActivity"/>
+        <activity android:name=".activity.settings.SetupActivity"/>
+        <activity android:name=".activity.funs.FunsActivity"/>
+        <activity android:name=".activity.photo.PreviewPhotoActivity"/>
+    </application>
+
+</manifest>
