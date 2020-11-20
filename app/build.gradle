@@ -73,6 +73,14 @@ android {
             buildConfigField "String", "phone", "\"13120093330\""
             buildConfigField "String", "password", "\"123456\""
         }
+
+        product_StemCellsManager_release {
+            buildConfigField "String", "baseUrl", "\"https://www.huashengfu.cn:7000\""
+            buildConfigField "boolean", "test", "false"
+            buildConfigField "String", "phone", "\"\""
+            buildConfigField "String", "password", "\"\""
+        }
+
     }
     compileOptions {
         targetCompatibility JavaVersion.VERSION_1_8

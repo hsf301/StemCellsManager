@@ -80,7 +80,7 @@
                 android:layout_width="@dimen/width_dynamic_list"
                 android:layout_height="@dimen/height_dynamic_list"
                 android:layout_marginRight="3dp"
-                android:src="@mipmap/icon_view" />
+                android:src="@mipmap/icon_dy_1" />
 
             <TextView
                 android:id="@+id/tv_view"
@@ -94,7 +94,7 @@
                 android:layout_width="@dimen/width_dynamic_list"
                 android:layout_height="@dimen/height_dynamic_list"
                 android:layout_marginRight="3dp"
-                android:src="@mipmap/icon_read" />
+                android:src="@mipmap/icon_dy_2" />
 
             <TextView
                 android:id="@+id/tv_read"
@@ -108,7 +108,7 @@
                 android:layout_width="@dimen/width_dynamic_list"
                 android:layout_height="@dimen/height_dynamic_list"
                 android:layout_marginRight="3dp"
-                android:src="@mipmap/icon_comments" />
+                android:src="@mipmap/icon_dy_3" />
 
             <TextView
                 android:id="@+id/tv_comments"

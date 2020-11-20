@@ -57,7 +57,7 @@
                     android:layout_width="@dimen/width_activity_list"
                     android:layout_height="@dimen/height_activity_list"
                     android:layout_marginRight="5dp"
-                    app:srcCompat="@mipmap/icon_time_blue" />
+                    app:srcCompat="@mipmap/icon_time_hd" />
 
                 <TextView
                     style="@style/TextBlack12Sp"
@@ -93,7 +93,7 @@
                         android:layout_width="@dimen/width_activity_list"
                         android:layout_height="@dimen/height_activity_list"
                         android:layout_marginRight="5dp"
-                        app:srcCompat="@mipmap/icon_location_blue" />
+                        app:srcCompat="@mipmap/icon_location_hd" />
 
                     <TextView
                         style="@style/TextBlack12Sp"

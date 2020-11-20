@@ -68,6 +68,7 @@
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
+                            android:layout_marginRight="3dp"
                             app:srcCompat="@mipmap/icon_view" />
 
                         <TextView
@@ -81,7 +82,8 @@
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            app:srcCompat="@mipmap/icon_count" />
+                            android:layout_marginRight="2dp"
+                            app:srcCompat="@mipmap/icon_count_p" />
 
                         <TextView
                             android:id="@+id/tv_count"
@@ -144,7 +146,7 @@
                     <ImageView
                         android:layout_width="@dimen/width_service_menu"
                         android:layout_height="@dimen/height_service_menu"
-                        app:srcCompat="@mipmap/icon_files" />
+                        app:srcCompat="@mipmap/icon_informaction" />
 
                     <TextView
                         style="@style/TextBlack12Sp"

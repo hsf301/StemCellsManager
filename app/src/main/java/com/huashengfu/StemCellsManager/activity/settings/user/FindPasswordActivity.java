@@ -39,6 +39,8 @@ public class FindPasswordActivity extends BaseActivity {
     EditText etPwd;
     @BindView(R.id.et_repwd)
     EditText etRepwd;
+    @BindView(R.id.et_name)
+    EditText etName;
 
     @BindView(R.id.iv_eye)
     ImageView ivEye;
@@ -51,8 +53,6 @@ public class FindPasswordActivity extends BaseActivity {
 
     private final int MaxTime = 10;
     private int time = 0;
-
-    private String phone;
 
     private Runnable timeDown = new Runnable() {
         @Override
@@ -102,13 +102,9 @@ public class FindPasswordActivity extends BaseActivity {
 
         unbinder = ButterKnife.bind(this);
 
-        phone = getIntent().getStringExtra(Constants.Tag.data);
-
         etCode.addTextChangedListener(textWatcher);
         etPwd.addTextChangedListener(textWatcher);
         etRepwd.addTextChangedListener(textWatcher);
-
-        sendCode();
     }
 
     private boolean hidden = true;
@@ -117,6 +113,11 @@ public class FindPasswordActivity extends BaseActivity {
     public void onClick(View view){
         switch (view.getId()){
             case R.id.btn_complete:{
+                if(etName.getText().length() <= 0){
+                    showMessage(etName.getHint());
+                    return;
+                }
+
                 if(!etPwd.getText().toString().equals(etRepwd.getText().toString())){
                     tvTips.setText(R.string.error_register_pwd_eq_repwd);
                     tvTips.setVisibility(View.VISIBLE);
@@ -127,7 +128,7 @@ public class FindPasswordActivity extends BaseActivity {
 
                 try {
                     JSONObject obj = new JSONObject();
-                    obj.put(HttpHelper.Params.phone, phone);
+                    obj.put(HttpHelper.Params.phone, etName.getText().toString());
                     obj.put(HttpHelper.Params.newPassword, etPwd.getText().toString());
                     obj.put(HttpHelper.Params.repeatPassword, etRepwd.getText().toString());
                     obj.put(HttpHelper.Params.verification, etCode.getText().toString());
@@ -185,13 +186,18 @@ public class FindPasswordActivity extends BaseActivity {
     }
 
     private void sendCode(){
+        if(etName.getText().length() <= 0){
+            showMessage(etName.getHint());
+            return;
+        }
+
         tvSendcode.setEnabled(false);
         time=0;
         tvSendcode.post(timeDown);
 
         OkGo.<JSONObject>get(HttpHelper.Url.Admin.verification)
                 .tag(this)
-                .params(HttpHelper.Params.phone, phone)
+                .params(HttpHelper.Params.phone, etName.getText().toString())
                 .execute(new JsonCallback<JSONObject>() {
                     @Override
                     public void onSuccess(Response<JSONObject> response) {

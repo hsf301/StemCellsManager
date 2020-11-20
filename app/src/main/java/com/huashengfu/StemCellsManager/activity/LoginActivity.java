@@ -117,11 +117,6 @@ public class LoginActivity extends BaseActivity {
                 break;
             }
             case R.id.btn_findpwd:{
-                if(etName.getText().length() <= 0){
-                    showMessage(etName.getHint());
-                    return;
-                }
-
                 Intent intent = new Intent(this, FindPasswordActivity.class);
                 intent.putExtra(Constants.Tag.data, etName.getText().toString());
                 startActivity(intent);

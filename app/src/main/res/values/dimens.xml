@@ -9,6 +9,7 @@
     <dimen name="radius_edit">5dp</dimen>
     <dimen name="radius_dot">30dp</dimen>
     <dimen name="radius_container">10dp</dimen>
+    <dimen name="radius_search">50dp</dimen>
     <dimen name="radius_flag">15dp</dimen>
     <dimen name="radius_count">10dp</dimen>
     <dimen name="radius_service_type">10dp</dimen>

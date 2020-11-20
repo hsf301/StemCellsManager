@@ -65,7 +65,8 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@mipmap/icon_view" />
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@mipmap/icon_dy_1" />
 
                     <TextView
                         android:id="@+id/tv_view"
@@ -78,7 +79,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@mipmap/icon_count" />
+                        app:srcCompat="@mipmap/icon_dy_2" />
 
                     <TextView
                         android:id="@+id/tv_count"
@@ -101,7 +102,7 @@
                         android:layout_width="@dimen/width_service_list"
                         android:layout_height="@dimen/height_service_list"
                         android:layout_marginRight="@dimen/dp_10"
-                        app:srcCompat="@mipmap/icon_menu_blue" />
+                        app:srcCompat="@mipmap/icon_edit_ms" />
 
                     <Button
                         android:id="@+id/btn_offline"

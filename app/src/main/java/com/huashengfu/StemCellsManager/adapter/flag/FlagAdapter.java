@@ -14,6 +14,15 @@ import java.util.List;
 public class FlagAdapter extends BaseAdapter<FlagViewHolder> {
 
     private List<String> flags = new ArrayList<>();
+    private boolean showDelete;
+
+    public FlagAdapter(){
+        this.showDelete = true;
+    }
+
+    public FlagAdapter(boolean showDelete){
+        this.showDelete = showDelete;
+    }
 
     public void addAll(List<String> flags) {
         if(flags == null)
@@ -59,6 +68,8 @@ public class FlagAdapter extends BaseAdapter<FlagViewHolder> {
                 }
             });
         }
+
+        viewHolder.ivDelete.setVisibility(showDelete ? View.VISIBLE : View.GONE);
 
         viewHolder.ivDelete.setOnClickListener(new View.OnClickListener() {
             @Override

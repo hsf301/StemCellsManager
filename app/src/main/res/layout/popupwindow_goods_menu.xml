@@ -130,7 +130,7 @@
                     <ImageView
                         android:layout_width="@dimen/width_service_menu"
                         android:layout_height="@dimen/height_service_menu"
-                        app:srcCompat="@mipmap/icon_files" />
+                        app:srcCompat="@mipmap/icon_informaction" />
 
                     <TextView
                         style="@style/TextBlack12Sp"

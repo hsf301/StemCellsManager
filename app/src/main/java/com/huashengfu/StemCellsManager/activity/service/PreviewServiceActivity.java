@@ -199,7 +199,7 @@ public class PreviewServiceActivity extends BaseActivity {
     private void initFlag(){
         FlowLayoutManager layoutManager = new FlowLayoutManager(this, false);
         rvFlag.setLayoutManager(layoutManager);
-        flagAdapter = new FlagAdapter();
+        flagAdapter = new FlagAdapter(false);
         rvFlag.setAdapter(flagAdapter);
         rvFlag.setNestedScrollingEnabled(false);
     }

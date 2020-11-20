@@ -128,7 +128,7 @@ public class PreviewActivityActivity extends BaseActivity {
 
     private void initFlag(){
         FlowLayoutManager layoutManager = new FlowLayoutManager(this, false);
-        flagAdapter = new FlagAdapter();
+        flagAdapter = new FlagAdapter(false);
         rvFlag.setLayoutManager(layoutManager);
         rvFlag.setAdapter(flagAdapter);
     }
