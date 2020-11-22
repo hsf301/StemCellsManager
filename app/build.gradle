@@ -125,61 +125,7 @@ android {
     }
 }
 
-MobSDK {
-//    shareSDK 的appKey appSecret
-//    fp true //严格模式
-    appKey "314815970b437"
-    appSecret "cd03bf812c51b69ff402c1c4492984ff"
-    ShareSDK {
-        loopShare false
-        devInfo {
-            Wechat {
-                id 1
-                sort 1
-                appId "wxf9f14d5034ac47d0"
-                appSecret "4b6787dee926e2e11e031a708302c5a8"
-//                要分享微信小应用程序时用userName,path
-//                userName "gh_afb25ac019c9"
-//                path "pages/index/index.html?id=1"
-                withShareTicket true
-                miniprogramType 2
-            }
-            WechatMoments {
-                id 2
-                sort 2
-                appId "wxf9f14d5034ac47d0"
-                appSecret "4b6787dee926e2e11e031a708302c5a8"
-            }
-            SinaWeibo {
-                id 3
-                sortId 3
-                appKey "2347158024"
-                appSecret "bad220a66e2f460c5de92149fc87816a"
-//                callbackUri "http://www.sharesdk.cn"
-                shareByAppClient true
-                enable true
-            }
-            QQ {
-                id 4
-                sortId 4
-                appKey "101911699"
-                appSecret "5544b12d5be2d5c27ddfac719e44aaa8"
-                bypassApproval false
-                shareByAppClient true
-                enable true
-            }
-            QZone {
-                id 5
-                sortId 5
-                appKey "101911699"
-                appSecret "5544b12d5be2d5c27ddfac719e44aaa8"
-                bypassApproval false
-                shareByAppClient true
-                enable true
-            }
-        }
-    }
-}
+
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -223,5 +169,6 @@ dependencies {
     //    implementation 'cn.jiguang.sdk:jpush:3.2.0'
     //    implementation 'cn.jiguang.sdk:jcore:2.0.1'
     implementation project(':superplayerkit')
+    implementation project(':spinnerWheelLibrary')
 
 }
